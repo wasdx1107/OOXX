@@ -165,6 +165,7 @@ public class StartActivity extends AppCompatActivity {
             b.putBoolean("isSingle",false);
             intent.putExtras(b);
             startActivity(intent);
+
             StartActivity.this.finish();
         }
     };
