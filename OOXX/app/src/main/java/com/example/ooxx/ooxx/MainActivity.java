@@ -746,11 +746,11 @@ public class MainActivity extends AppCompatActivity {
                 else if (playTable[1]==0) playTable[1]=state;
             }
             else if ((playTable[3]==playTable[4]&&playTable[5]==0&&playTable[3]!=0)||
-                    (playTable[4]==playTable[5]&&playTable[6]==0&&playTable[4]!=0)||
+                    (playTable[4]==playTable[5]&&playTable[3]==0&&playTable[4]!=0)||
                     (playTable[3]==playTable[5]&&playTable[4]==0&&playTable[5]!=0))
             {
                 if (playTable[5]==0) playTable[5]=state;
-                else if (playTable[6]==0) playTable[6]=state;
+                else if (playTable[3]==0) playTable[3]=state;
                 else if (playTable[4]==0) playTable[4]=state;
             }
             else if ((playTable[6]==playTable[7]&&playTable[8]==0&&playTable[6]!=0)||
@@ -804,7 +804,9 @@ public class MainActivity extends AppCompatActivity {
             else
             {
                 int i=0;
-                for (i=0;i<9;i++)
+
+                int in=(int)(Math.random()*8);
+                for (i=in;i<9;i++)
                     if (playTable[i]==0)
                         break;
                playTable[i]=state;
