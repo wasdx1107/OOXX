@@ -43,9 +43,9 @@ public class EndActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_end);
-        mListView=(ListView)findViewById(R.id.listView);
-        mBtnOK=(Button)findViewById(R.id.btnOK);
-        mLayout=(ConstraintLayout)findViewById(R.id.endLayout);
+        mListView=findViewById(R.id.listView);
+        mBtnOK=findViewById(R.id.btnOK);
+        mLayout=findViewById(R.id.endLayout);
 
         mBtnOK.setOnClickListener(mBtnOnClick);
 
