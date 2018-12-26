@@ -25,14 +25,15 @@ import java.util.ArrayList;
 
 public class EndActivity extends AppCompatActivity {
     private ListView mListView;
+
     private Button mBtnOK;
 
     private MediaPlayer mPlayer;
 
     private static final int MENU_RECORD= Menu.FIRST,
-            MENU_PLAYER=Menu.FIRST+1,
-            MENU_PLAY=Menu.FIRST+2,
-            MENU_STOP=Menu.FIRST+3;
+            MENU_PLAYER = Menu.FIRST+1,
+            MENU_PLAY = Menu.FIRST+2,
+            MENU_STOP = Menu.FIRST+3;
 
     private ConstraintLayout mLayout;
     private static final String DB_FILE = "records.db", DB_TABLE = "records";
