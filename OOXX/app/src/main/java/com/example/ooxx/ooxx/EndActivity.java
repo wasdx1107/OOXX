@@ -76,7 +76,7 @@ public class EndActivity extends AppCompatActivity {
                         "lose INTEGER);");
             cursor.close();
         }
-        Cursor c = mRecordDb.query(true, DB_TABLE, new String[]{"name", "win", "draw", "lose"}, null, null, null, null, null, null);
+        Cursor c = mRecordDb.query(true,DB_TABLE, new String[]{"name", "win", "draw", "lose"}, null, null, null, null, null, null);
         if (c.getCount()==0)
             Toast.makeText(this, "We Don't have any records.", Toast.LENGTH_LONG).show();
         else

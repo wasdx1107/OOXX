@@ -125,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
             final EditText player2name = (EditText) dialog2View.findViewById(R.id.player2name);
             dialog2.setView(dialog2View)
                     .setCancelable(false)
-                    .setPositiveButton("輸", new DialogInterface.OnClickListener() {
+                    .setPositiveButton("輸入", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
                             mTxtPlayer1.setText(player1name.getText().toString());
